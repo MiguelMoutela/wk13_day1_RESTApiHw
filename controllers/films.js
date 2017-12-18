@@ -38,7 +38,7 @@ filmRouter.put('/:id', function(req, res){
 })
 
 //delete a cat
-filmRouter.delete('xs/:id', function(req,res){
+filmRouter.delete('/:id', function(req,res){
   //get the index of the cat to remove
   const indexToRemove = req.params.id;
   //remove cat from array
