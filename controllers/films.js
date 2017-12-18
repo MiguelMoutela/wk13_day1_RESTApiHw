@@ -21,29 +21,29 @@ filmRouter.get('/:id', function(req,res){
 filmRouter.post('/', function(req,res){
   //get the film from insomnia
   const newFilm = req.body.film;
-  //add the cat to the array
+  //add the film to the array
   films.push(newFilm);
-  //display the cats
+  //display the films
   res.json(films);
 })
 
-//update a cat
+//update a film
 filmRouter.put('/:id', function(req, res){
-  //get the cat from insomnia
+  //get the film from insomnia
   const newFilm = req.body.film;
-  //replace the old cat with the new cat
+  //replace the old film with the new film
   films[req.params.id] = newFilm;
-  //display the cats
+  //display the films
   res.json(films);
 })
 
-//delete a cat
+//delete a film
 filmRouter.delete('/:id', function(req,res){
-  //get the index of the cat to remove
+  //get the index of the film to remove
   const indexToRemove = req.params.id;
-  //remove cat from array
+  //remove film from array
   films.splice(indexToRemove,1);
-  //display the cats
+  //display the films
   res.json(films);
 })
 
