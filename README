@@ -1,0 +1,14 @@
+Express + Webpack Homework
+We've seen a lot today! Tonight's homework is going to practice everything we have seen.
+
+Based on the starter code:
+
+Server API Tasks
+Create an api for the films app using an /api/films restful route pattern and Express Router
+Index route to show all films
+Get film by id (id is just an array index for now, until we hook up a database)
+Create film
+Update film
+Delete film
+Don't forget to get your app to use the controllers/index.js!
+
